@@ -10,9 +10,10 @@
 </head>
 <body>
     <div id="app">
-      <ul v-for="(mail,index) in mailArray">
-        <li>{{ mail }}</li>
-      </ul>
+      <button @click="generateMail()">Generate E-mail</button>
+      <ol>
+        <li v-for="(mail,index) in mailArray">{{ mail }}</li>
+      </ol>
     </div>
     <script src="./js/script.js"></script>
 </body>
